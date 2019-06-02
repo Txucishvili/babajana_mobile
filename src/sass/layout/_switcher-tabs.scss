@@ -1,0 +1,21 @@
+.tab-switch-list {
+  position: relative;;
+  width: 100%;
+
+}
+
+.switcher {
+  &--tab {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &--active {
+      display: block;
+    }
+  }
+
+
+}

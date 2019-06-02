@@ -1,0 +1,52 @@
+.headline {
+  &--position {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: $main-theme-headline;
+  }
+
+  @include no-scroll;
+
+  &--a {
+    padding: 8px $headline-h;
+    @include flex;
+    @include align-items(center);
+    width: 100%;
+    height: 46px;
+  }
+
+  &--b {
+    //padding: 0 $headline-h;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &--logo {
+    max-width: 120px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &--user-side {
+    margin-left: auto;
+    @include flex;
+    @include align-items(center);
+
+    .search-side {
+      margin-right: 20px;
+    }
+    .search-btn {
+      @include size(30px);
+      cursor: pointer;
+      @include flex-all;
+      svg {
+        height: 19px;
+        width: 19px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,49 @@
+// global var
+
+// fonts
+$BPG-Arial: 'BPG Arial';
+
+// globals
+$headline-h: 20px;
+
+
+// colors
+$color-light: #fff;
+$color-dark: #000;
+
+$color-gray-1: #e9ecef;
+$color-gray-2: #898f9f;
+$color-gray-3: #adb5bd;
+
+$color-orange: #f76707;
+
+// theme colors
+$main-theme: var(--main-theme, $color-light);
+$main-theme-bg: var(--main-theme-bg, $color-light);
+$main-theme-color: var(--main-theme-color, $color-dark);
+
+$main-theme-headline: var(--main-theme-headline, $color-light);
+
+
+//funcs
+@function px($data) {
+  @return $data + px;
+}
+
+// mixins
+@mixin no-scroll {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin text-overflow($line-height: 16, $lines: 2) {
+  display: -webkit-box;
+  line-height: px($line-height);
+  max-height: px($line-height * $lines);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  white-space: initial;
+}

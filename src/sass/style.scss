@@ -1,0 +1,30 @@
+// lib
+@import "~sassync/sass/_default/import";
+
+// reset
+@import "~sassync/sass/_default/_theme/reset";
+
+// theme
+@import "variables";
+@import "theme";
+@import "layout/elements";
+
+@import "layout/pagination";
+
+@import "layout/switcher-tabs";
+@import "layout/defaults.components";
+@import "layout/search-container";
+@import "layout/layout";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/news-box-list";
+@import "layout/video-box-list";
+@import "layout/tvshows-box-list";
+@import "layout/news-timeline-list";
+@import "layout/small-video-blocks";
+@import "layout/tv-page-channel-list";
+@import "layout/single-page-layout";
+@import "layout/news-single-page";
+@import "layout/comments.component";
+@import "layout/auth.page";
+

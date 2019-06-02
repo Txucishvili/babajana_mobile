@@ -1,0 +1,170 @@
+.btn {
+  background-color: transparent;
+  outline: none;
+  @include flex-all;
+  @include select(none);
+
+  &--simple {
+    padding: 8px 15px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid $color-orange;
+    background-color: transparent;
+    color: $color-orange;
+    font-family: $BPG-Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+    letter-spacing: 1.05px;
+
+    &:active {
+      color: $color-light;
+      background-color: $color-orange;
+    }
+  }
+
+  &--round {
+    height: 30px;
+    color: $color-light;
+    border-radius: 30px;
+    background-color: $color-orange;
+    line-height: 12px;
+    text-decoration: none;
+    letter-spacing: 1.05px;
+    font-family: $BPG-Arial;
+    font-size: 12px;
+    font-weight: 400;
+
+  }
+
+  &--full {
+    height: 52px;
+    background-color: $color-gray-1;
+    @include flex-all;
+    color: $color-dark;
+    font-family: $BPG-Arial;
+    font-size: 12px;
+    font-weight: 400;
+    flex: 1;
+
+    > * {
+      margin-left: 6px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .icons {
+      .icon {
+        width: 8px;
+        height: 14px;
+      }
+    }
+
+  }
+
+  &--color {
+    &--fb {
+      color: $color-light !important;
+      background-color: #3c5a99;
+    }
+    &--orange {
+      color: $color-light !important;
+      background-color: $color-orange;
+    }
+  }
+}
+
+.flex {
+  &--row {
+    @include flex;
+    flex-direction: row;
+  }
+
+  &--ac {
+    align-items: center;
+  }
+
+  &--left {
+    margin-right: auto;
+  }
+
+  &--right {
+    margin-left: auto;
+  }
+}
+
+.label {
+  &--position {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .input {
+    input {
+      width: 100%;
+      color: $color-gray-2;
+      font-family: $BPG-Arial;
+      font-size: 12px;
+      font-weight: 400;
+      height: 36px;
+      border-radius: 35px;
+      background-color: $color-gray-1;
+      border: none;
+      padding: 0 25px;
+    }
+  }
+}
+
+.alert {
+  &--position {
+    width: 100%;
+    padding: 15px;
+    background-color: $color-gray-1;
+  }
+  &--danger {
+    background-color: rgba(247, 103, 7, 0.1);
+  }
+  .text {
+    color: $color-dark;
+    font-family: $BPG-Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}
+
+.rules {
+  &--list {
+    @include flex;
+    flex-direction: column;
+    padding: 20px 15px;
+
+    > * {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &--big {
+    color: $color-dark;
+    font-family: $BPG-Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &--small {
+    color: $color-dark;
+    font-family: $BPG-Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}

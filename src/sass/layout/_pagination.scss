@@ -1,0 +1,46 @@
+.pagination {
+  &--position {
+    padding: 15px 15px;
+  }
+
+  &--list {
+    @include flex;
+  }
+
+  &--btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: $color-gray-1;
+    @include flex-all;
+    text-decoration: none;
+    margin-right: 5px;
+    color: $color-dark;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    b {
+      font-family: $BPG-Arial;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+
+    &:active {
+      background-color: darken($color-gray-1, 5%);
+    }
+
+    &--active {
+      color: $color-light;
+      background-color: $color-orange;
+
+      &:active {
+        background-color: darken($color-orange, 5%);
+      }
+    }
+
+
+  }
+}

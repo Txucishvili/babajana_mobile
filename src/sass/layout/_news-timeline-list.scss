@@ -1,0 +1,117 @@
+.news-timeline-list {
+  &--position {
+  }
+
+  .news-item {
+    &--position {
+      padding: 15px 10px;
+      border-bottom: 1px solid $color-gray-1;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .side-a {
+      @include flex;
+      @include align-items(center);
+    }
+    .side-b {
+      margin-left: auto;
+    }
+
+    .control-side {
+      @include flex;
+
+      &--position {
+        //padding: 15px 13px;
+        padding-left: 13px;
+        margin-right: 19px;
+      }
+
+      .control-btn {
+        @include flex-all;
+        //background-color: $oc-gray-3;
+        border-radius: 4px;
+        @include size(28px);
+
+        svg {
+          @include size(17px);
+        }
+
+        margin-right: 19px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .data-list {
+      @include flex;
+      @include align-items(center);
+      flex-wrap: wrap;
+
+      .text {
+        @include flex;
+        @include align-items(center);
+        color: $color-gray-2;
+        font-family: $BPG-Arial;
+        font-size: 12px;
+        font-weight: 400;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background-color: $color-gray-3;
+          margin: 0 5px;
+          border-radius: 10px;
+        }
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    .title-area {
+      @include flex;
+
+      .title {
+        color: $color-dark;
+        font-family: $BPG-Arial;
+        font-size: 14px;
+        font-weight: 400;
+
+        b {
+          @include text-overflow(18, 3);
+        }
+      }
+
+      .image-area {
+        min-width: 120px;
+        height: 70px;
+        border-radius: 5px;
+        overflow: hidden;
+        flex-basis: 120px;
+        margin-left: 20px;
+
+        img {
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+
+    .control-area {
+      @include flex;
+      padding-top: 9px;
+    }
+  }
+
+}
