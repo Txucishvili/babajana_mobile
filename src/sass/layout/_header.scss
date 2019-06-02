@@ -3,6 +3,7 @@
     width: 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background-color: $main-theme-headline;
+    //position: fixed;
   }
 
   @include no-scroll;
