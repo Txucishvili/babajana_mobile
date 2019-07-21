@@ -839,6 +839,7 @@ body.theme.-dark {
 .search-container--active {
   visibility: visible;
   opacity: 1;
+  z-index: 55555;
 }
 
 .search-container--active .bar--position {
