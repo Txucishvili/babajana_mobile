@@ -18,3 +18,17 @@
     flex: 1;
   }
 }
+
+.fixed-area {
+  &--position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 55555;
+  }
+
+  &--top-control {
+    padding-top: 46px;
+  }
+}

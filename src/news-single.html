@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="single-page-layout single-page-layout--position news-single-page news-single-page--position">
-    <div class="head-control-area head-control-area--position head-control-area--flex">
+    <div class="head-control-area head-control-area--position head-control-area--flex fixed-area fixed-area--position">
       <div class="back-arrow back-arrow--position">
         <a href="#/" class="go-back">
           <div class="icon">
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="body-area body-area--position">
+    <div class="body-area body-area--position fixed-area fixed-area--top-control">
       <div class="title-area">
         <div class="title">ზაალ უდუმაშვილი - ჩვენ ჩამოგვყავს ათასობით
           დამკვირვებელი სწორედ იმისათვის, რომ არ
@@ -146,6 +146,89 @@
         </div>
       </div>
       </div>
+  </div>
+  <div class="single-page-layout single-page-layout--position news-single-page news-single-page--position">
+    <div class="head-control-area head-control-area--position head-control-area--flex fixed-area fixed-area--position">
+      <div class="back-arrow back-arrow--position">
+        <a href="/news/" class="go-back">
+          <div class="icon">
+            <svg>
+              <use xlink:href="{THEME}/dist/images/icons.svg#arrow-left"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="f-r flex-c flex-c--right top-title top-title--position">
+        <div class="top-title--text">
+          IPN.TV
+        </div>
+      </div>
+    </div>
+    <div class="body-area body-area--position">
+      <div class="title-area">
+        <div class="title">{title}
+        </div>
+      </div>
+      <div class="data-list default--padding--h default--padding--bottom">
+        <div class="text"><b>18 მაისი</b></div>
+        <div class="text"><b>2 კომენტარი</b></div>
+        <div class="text"><b>125 ნახვა</b></div>
+      </div>
+      <div class="image-area">
+        <div class="image"><img
+                src="[xfvalue_image]"
+                alt=""></div>
+      </div>
+      <div class="text-area">
+        <div class="text">
+          {full-story}
+        </div>
+      </div>
+      <div class="comments-switcher flex">
+        <div class="btn btn--switcher btn--switcher--active" data-switcher="tab2">
+          <p>კომენტარები {comments-num}</p>
+        </div>
+        <div class="btn btn--switcher -fb" data-switcher="tab3">
+          <p>FB კომენტარები</p>
+        </div>
+
+      </div>
+      <div class="tab-switch-list">
+        <div class="comments-list comments-list--simple switcher--tab" data-switch="tab2">
+          <div class="comment-item comment-item--position">
+            <a href="#/" class="comment-item comment-item--control comment-item--title"><p>Qetevani K</p></a>
+            <div class="comment-item comment-item--control comment-item--body"><p>
+              შევარდნაძის პერიოდში ხალხს არ მოსწონდა სიღატაკე,
+              კრიმინალი და კორუფცია, მაგრამ ითმენდნენ
+              შევარდნაძის რეჟიმს, რადგან საშუალება ქონდათ
+              ეცხოვრათ ქურდული გაგებით, რაც მათთვის იყო
+              ბუნებრივი. მაგრამ, როდესაც კორუფციამ და
+              კრიმინალმა გადააჭარბა ყოველგვარ საზღვარს,
+              ხალხი გამოვიდა ქუჩაში დ მხარი დაუჭირა სააკაშვილის
+              გუნდს, რომელიც შეპირდა ხალხს კორუფციის,
+              კრიმინალის და ბიუროკრატიის მოსპობას.
+            </p></div>
+          </div>
+          <div class="comment-item comment-item--position">
+            <a href="#/" class="comment-item comment-item--control comment-item--title"><p>Qetevani K</p></a>
+            <div class="comment-item comment-item--control comment-item--body"><p>
+              შევარდნაძის პერიოდში ხალხს არ მოსწონდა სიღატაკე,
+              კრიმინალი და კორუფცია, მაგრამ ითმენდნენ
+              შევარდნაძის რეჟიმს, რადგან საშუალება ქონდათ
+              ეცხოვრათ ქურდული გაგებით, რაც მათთვის იყო
+              ბუნებრივი. მაგრამ, როდესაც კორუფციამ და
+              კრიმინალმა გადააჭარბა ყოველგვარ საზღვარს,
+              ხალხი გამოვიდა ქუჩაში დ მხარი დაუჭირა სააკაშვილის
+              გუნდს, რომელიც შეპირდა ხალხს კორუფციის,
+              კრიმინალის და ბიუროკრატიის მოსპობას.
+            </p></div>
+          </div>
+        </div>
+        <div class="comments-list comments-list--fb comments-list--padding switcher--tab" data-switch="tab3">
+          fb comments
+        </div>
+      </div>
+    </div>
   </div>
   <div class="search-container-main search-container search-container--position">
     <div class="search-container bar--position">
