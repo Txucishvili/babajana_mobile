@@ -304,6 +304,7 @@
   .ml-15 {
     margin-left: 20px;
   }
+
   .ml-5 {
     margin-left: 5px;
   }
@@ -347,4 +348,31 @@
     border-radius: 100%;
   }
 
+}
+
+.default {
+  &--padding {
+    &--h {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    &--top {
+      padding-top: 12px;
+    }
+
+    &--bottom {
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.flex-c {
+  &--right {
+    margin-left: auto;
+  }
+
+  &--left {
+    margin-right: auto;
+  }
 }

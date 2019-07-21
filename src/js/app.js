@@ -13,6 +13,32 @@ SearchControl.init({
   body: '.search-container'
 });
 
+const openPopupName = '.popup--open';
+const closePopupName = '.popup--close';
+
+const openPopup = () => {
+  const item = $(openPopupName);
+  const target = $(openPopupName).data('modal');
+  const parentTarget = $('.popup-page');
+
+  $(parentTarget).addClass('popup-page--active');
+  $(`.${target}`).addClass('popup-page--item--active');
+};
+
+
+const closePopup = () => {
+  const item = $(openPopupName);
+  const target = $(openPopupName).data('modal');
+  const parentTarget = $('.popup-page');
+
+  $(parentTarget).removeClass('popup-page--active');
+  $(`.${target}`).removeClass('popup-page--item--active');
+};
+
+$(openPopupName).on('click', openPopup);
+
+$(closePopupName).on('click', closePopup);
+
 // $('.tab-switcher').on('click', ($event) => {
 //   tabSwitcher.switch($event);
 // });

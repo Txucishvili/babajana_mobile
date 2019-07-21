@@ -10673,7 +10673,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
@@ -10691,7 +10691,7 @@ var _tabSwitcher = __webpack_require__(3);
 
 var _tabSwitcher2 = _interopRequireDefault(_tabSwitcher);
 
-var _searchControl = __webpack_require__(9);
+var _searchControl = __webpack_require__(4);
 
 var _searchControl2 = _interopRequireDefault(_searchControl);
 
@@ -10707,6 +10707,31 @@ _searchControl2.default.init({
   button: '.search-btn',
   body: '.search-container'
 });
+
+var openPopupName = '.popup--open';
+var closePopupName = '.popup--close';
+
+var openPopup = function openPopup() {
+  var item = (0, _jquery2.default)(openPopupName);
+  var target = (0, _jquery2.default)(openPopupName).data('modal');
+  var parentTarget = (0, _jquery2.default)('.popup-page');
+
+  (0, _jquery2.default)(parentTarget).addClass('popup-page--active');
+  (0, _jquery2.default)('.' + target).addClass('popup-page--item--active');
+};
+
+var closePopup = function closePopup() {
+  var item = (0, _jquery2.default)(openPopupName);
+  var target = (0, _jquery2.default)(openPopupName).data('modal');
+  var parentTarget = (0, _jquery2.default)('.popup-page');
+
+  (0, _jquery2.default)(parentTarget).removeClass('popup-page--active');
+  (0, _jquery2.default)('.' + target).removeClass('popup-page--item--active');
+};
+
+(0, _jquery2.default)(openPopupName).on('click', openPopup);
+
+(0, _jquery2.default)(closePopupName).on('click', closePopup);
 
 // $('.tab-switcher').on('click', ($event) => {
 //   tabSwitcher.switch($event);
@@ -10818,16 +10843,6 @@ exports.default = TabSwitcher;
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10882,6 +10897,12 @@ var SearchControl = function () {
 }();
 
 exports.default = SearchControl;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
