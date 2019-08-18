@@ -15,8 +15,6 @@ class SearchControl {
 
     const th = this;
 
-    console.log($(this.btnClose));
-
     $(this.btnOpen).on('click',  (event)  => {
       $(th.body).addClass(`${bodyClassname}--active`)
     });

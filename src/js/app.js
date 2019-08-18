@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import TabSwitcher from './tab-switcher';
 import SearchControl from './search-control';
+import slick from './slick';
 
 const tabSwitcher = new TabSwitcher({
   tabClass: '.btn--switcher',
@@ -42,3 +43,11 @@ $(closePopupName).on('click', closePopup);
 // $('.tab-switcher').on('click', ($event) => {
 //   tabSwitcher.switch($event);
 // });
+
+$('.news-box-list').slick({
+  infinite: false,
+  slidesToShow: 2,
+  centerMode: true,
+  variableWidth: true,
+  arrows: false
+});
