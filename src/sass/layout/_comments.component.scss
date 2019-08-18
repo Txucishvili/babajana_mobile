@@ -91,3 +91,56 @@
   }
 }
 
+.add-comment-box {
+  width: 100%;
+
+  .btn-area {
+    padding: 15px;
+    .btn {
+      width: 100%;
+      background-color: $color-orange;
+      color: $oc-white;
+      padding: 12px;
+      height: initial;
+    }
+  }
+
+  &--border-top {
+    border-top: 1px solid #e9ecef;
+  }
+
+  .titler {
+    padding: 15px 26px;
+  }
+
+  .label {
+    padding: 0 15px;
+
+    input {
+      width: 100%;
+      color: #898f9f;
+      font-family: "BPG Arial";
+      font-size: 12px;
+      font-weight: 400;
+      height: 36px;
+      border-radius: 35px;
+      background-color: #e9ecef;
+      border: none;
+      padding: 0 25px;
+      outline: none;
+    }
+
+    textarea {
+      width: 100%;
+      color: #898f9f;
+      font-family: "BPG Arial";
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 20px;
+      background-color: #e9ecef;
+      border: none;
+      padding: 20px 20px;
+      outline: none;
+    }
+  }
+}

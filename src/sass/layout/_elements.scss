@@ -78,6 +78,11 @@
 }
 
 .flex {
+
+  &--pos {
+    @include flex;
+  }
+
   &--row {
     @include flex;
     flex-direction: row;
@@ -85,6 +90,10 @@
 
   &--ac {
     align-items: center;
+  }
+
+  &--jc {
+    justify-content: center;
   }
 
   &--left {

@@ -196,6 +196,12 @@ body.theme.-dark {
   background-color: #f76707;
 }
 
+.flex--pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .flex--row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +216,12 @@ body.theme.-dark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex--jc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex--left {
@@ -2262,6 +2274,61 @@ body.theme.-dark {
 
 .comments-list--padding {
   padding: 15px;
+}
+
+.add-comment-box {
+  width: 100%;
+}
+
+.add-comment-box .btn-area {
+  padding: 15px;
+}
+
+.add-comment-box .btn-area .btn {
+  width: 100%;
+  background-color: #f76707;
+  color: #ffffff;
+  padding: 12px;
+  height: initial;
+}
+
+.add-comment-box--border-top {
+  border-top: 1px solid #e9ecef;
+}
+
+.add-comment-box .titler {
+  padding: 15px 26px;
+}
+
+.add-comment-box .label {
+  padding: 0 15px;
+}
+
+.add-comment-box .label input {
+  width: 100%;
+  color: #898f9f;
+  font-family: "BPG Arial";
+  font-size: 12px;
+  font-weight: 400;
+  height: 36px;
+  border-radius: 35px;
+  background-color: #e9ecef;
+  border: none;
+  padding: 0 25px;
+  outline: none;
+}
+
+.add-comment-box .label textarea {
+  width: 100%;
+  color: #898f9f;
+  font-family: "BPG Arial";
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 20px;
+  background-color: #e9ecef;
+  border: none;
+  padding: 20px 20px;
+  outline: none;
 }
 
 .auth-single-page .auth-panel-control {
